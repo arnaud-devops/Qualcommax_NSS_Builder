@@ -3,8 +3,6 @@ name: Build OpenWrt for specific target and release
 on:
   workflow_dispatch:
   push:
-  schedule:
-    - cron: "0 */2 * * *"
 
 env:
   REMOTE_REPOSITORY: qosmio/openwrt-ipq
@@ -44,7 +42,6 @@ jobs:
   build:
     name: Build OpenWrt
     needs: check_commits
-    if: needs.check_commits.outputs.new_commits == 'true' || needs.check_commits.outputs.nss_packages_repo_new_commits == 'true' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-24.04
     steps:
       - name: Install dependencies
