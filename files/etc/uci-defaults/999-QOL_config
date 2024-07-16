@@ -15,8 +15,8 @@ set wireless.default_radio0.bss_transition='1'
 set wireless.default_radio0.proxy_arp='1'
 
 # Wireless radio0 specific settings
-set wireless.radio0.htmode='HE160'
-set wireless.radio0.channel='36'
+set wireless.radio1.htmode='HE160'
+set wireless.radio1.channel='64'
 set wireless.radio0.country='FR'
 
 # Wireless default settings for radio1
@@ -31,7 +31,7 @@ set wireless.default_radio1.proxy_arp='1'
 
 # Wireless radio1 specific settings
 set wireless.radio1.htmode='HE20'
-set wireless.radio1.channel='6'
+set wireless.radio1.channel='11'
 set wireless.radio1.country='FR'
 
 # Firewall settings
